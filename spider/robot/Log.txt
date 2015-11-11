@@ -1,0 +1,5 @@
+Begin Log
+Begin to get 10 BaseInfo
+10 BaseInfo Success
+Begin to get 10 Advance Info
+10 AdvanceInfo Success
