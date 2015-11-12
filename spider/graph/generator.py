@@ -19,6 +19,7 @@ class Generator(object):
 
     def __init__(self):
         self.movies = Generator.load_movies()
+        self.username_sets = []
 
     @staticmethod
     def load_movies():
@@ -38,6 +39,12 @@ class Generator(object):
         # print(str(mov.movie_id) + ' ' + str(mov.reviews.__len__()) + '\n')
         return mov
 
+    def generate_username_sets(self):
+        for mov in self.movies:
+            username_list = [val.username for val in mov.reviews]
+            self.username_sets.append(set(username_list))
+            # print(set(username_list))
+
     def generate_nodes_file(self):
         nodes_f = open(output_dir_root + output_nodes_name, 'w')
         for mov in self.movies:
@@ -45,17 +52,46 @@ class Generator(object):
 
         nodes_f.close()
 
-    # def generate_edges_file(self):
-    #     movie_num = self.movies.__len__()
-    #
-    #     for i in range(movie_num):
-    #         for j in range(i + 1, movie_num):
-    #
+    def generate_edges_file(self):
+        edges_f = open(output_dir_root + output_edges_name, 'w')
+        list_num = self.username_sets.__len__()
+
+        max_num = 0
+        for i in range(list_num):
+            print('Processing ' + str(i) + ' Edges')
+            for j in range(i + 1, list_num):
+                shared_num = list(self.username_sets[i].intersection(self.username_sets[j])).__len__()
+                if shared_num > 0:
+                    edges_f.write(str(self.movies[i].rank) + ' ' + str(self.movies[j].rank) + ' ' + str(shared_num) +
+                                  '\n')
+                if shared_num > max_num:
+                    max_num = shared_num
+
+        print('Max Number ' + str(max_num))
+
+
+def test(gen):
+    sample_a = 219
+    sample_b = 137
+
+    index_a = list(filter(lambda x: gen.movies[x].rank == sample_a, range(gen.movies.__len__())))[0]
+    index_b = list(filter(lambda x: gen.movies[x].rank == sample_b, range(gen.movies.__len__())))[0]
+
+    shared_num = 0
+    for user in gen.username_sets[index_a]:
+        if user in gen.username_sets[index_b]:
+            shared_num += 1
+
+    print("Test Shared Num " + str(shared_num))
 
 
 def main():
     generator = Generator()
     generator.generate_nodes_file()
+    generator.generate_username_sets()
+    generator.generate_edges_file()
+    # test(generator)
+
 
 if __name__ == '__main__':
     main()

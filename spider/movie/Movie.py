@@ -25,7 +25,7 @@ def movie_to_dict(mov):
 
 
 def dict_to_movie(movie_dict):
-    print(movie_dict)
+    # print(movie_dict)
     a_movie = Movie(int(movie_dict['rank']), movie_dict['movie_id'], movie_dict['title'])
     a_movie.reviews = [movie.Review.dict_to_reviews(rev_dict) for rev_dict in movie_dict['reviews']]
     return a_movie
