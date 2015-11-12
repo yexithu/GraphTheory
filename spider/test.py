@@ -54,7 +54,7 @@ print(movie.Movie.movie_to_dict(aMovie))
 
 f = open('movie.json', 'w')
 
-f.write(json.dumps(aMovie,indent=1, default=movie.Movie.movie_to_dict))
+f.write(json.dumps(aMovie, indent=1, default=movie.Movie.movie_to_dict))
 f.close()
 
 f = open('movie.json', 'r')
