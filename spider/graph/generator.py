@@ -57,22 +57,25 @@ class Generator(object):
         list_num = self.username_sets.__len__()
 
         max_num = 0
+        min_num = 100000
+
+        scale = 1000
         for i in range(list_num):
             print('Processing ' + str(i) + ' Edges')
             for j in range(i + 1, list_num):
                 shared_num = list(self.username_sets[i].intersection(self.username_sets[j])).__len__()
-                if shared_num > 0:
-                    edges_f.write(str(self.movies[i].rank) + ' ' + str(self.movies[j].rank) + ' ' + str(shared_num) +
-                                  '\n')
-                if shared_num > max_num:
-                    max_num = shared_num
+                shared_base = pow(self.username_sets[i].__len__() * self.username_sets[j].__len__(), 0.5)
+                weight = int(float(shared_num) / shared_base * scale)
 
-        print('Max Number ' + str(max_num))
+                if shared_num > 0:
+                    edges_f.write(str(self.movies[i].rank) + ' ' + str(self.movies[j].rank) + ' ' +
+                                  str(weight) +
+                                  '\n')
 
 
 def test(gen):
-    sample_a = 219
-    sample_b = 137
+    sample_a = 10
+    sample_b = 73
 
     index_a = list(filter(lambda x: gen.movies[x].rank == sample_a, range(gen.movies.__len__())))[0]
     index_b = list(filter(lambda x: gen.movies[x].rank == sample_b, range(gen.movies.__len__())))[0]
