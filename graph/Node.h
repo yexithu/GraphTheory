@@ -15,6 +15,8 @@ public:
     {
         return this->mRank < n.mRank;
     }
+    
+    int lengthTo(Node *n);
 private:
     int mMovieID;
     int mRank;
@@ -24,5 +26,6 @@ private:
     std::vector<int > mWeights;
 
     friend class Graph;
+
 };
 #endif

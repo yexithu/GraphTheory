@@ -17,7 +17,11 @@ public:
     void readNodes(std::string nodeFileName);
     void readEdges(std::string edgeFileName);
     
+    int size();
     void debug();
+
+    void saveShortestPath(int start);
+    void shortestPath(int start, int end, std::vector<int> &path, int &weight);
 private:
     std::vector<Node *> mNodes;
     std::map<int, int> mRankIndexMap;
