@@ -4,25 +4,62 @@
 
 using namespace std;
 
+void buildGraph(Graph &graph);
+void testShortestPath(Graph &graph);
+void testCentralities(Graph &graph);
 int main()
 {
+    Graph graph;
+    buildGraph(graph);
+    testCentralities(graph);
+}
+
+void buildGraph(Graph &graph)
+{
+
     const string nodeFile = "./Data/Nodes.txt";
     const string edgeFile = "./Data/Edges.txt";
-    const string pathFile = "./Data/Paths.txt";
-    Graph graph;
     graph.readNodes(nodeFile);
     graph.readEdges(edgeFile);
+
+}
+
+void testShortestPath(Graph &graph)
+{
+    const string pathFile = "./Data/Paths.txt";
 
     vector<int> path;
     int weight;
     graph.shortestPath(100, 2, path, weight);
-    //graph.debug();
-    for (int i = 0; i < path.size(); ++i)
+    for (size_t i = 0; i < path.size(); ++i)
     {
-        cout << path[i] << " ";
+    cout << path[i] << " ";
     }
     cout << endl;
     cout << "Weight " << weight << endl;
 
     graph.saveAllShortestPath(pathFile);
+}
+
+void testCentralities(Graph &graph)
+{
+    const string bCentralityFile = "./Data/BetweennessCentrality.txt";
+    const string cCentralityFile = "./Data/ClosenessCentrality.txt";
+
+    vector<int> bCentralities;
+    vector<int> cCentralities;
+
+    graph.betweennessCentrality(bCentralities);
+    for (size_t i = 0; i < bCentralities.size(); ++i)
+    {
+        cout << bCentralities[i] << endl;
+    }
+    graph.saveBetweennessCentrality(bCentralityFile);
+
+    graph.closenessCentrality(cCentralities);
+    for (size_t i = 0; i < cCentralities.size(); ++i)
+    {
+        cout << cCentralities[i] << endl;
+    }
+    graph.saveClosenessCentrality(cCentralityFile);
 }

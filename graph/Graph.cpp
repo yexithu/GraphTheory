@@ -188,7 +188,7 @@ void Graph::saveAllShortestPath(string pathFileName)
 
     for (size_t i = 0; i < this->mNodes.size(); ++i)
     {
-        cout << "Saving " << i << endl;
+        cout << "Saving Shortpath" << i << endl;
         saveNodeShortestPath(pathFileName, i);
     }
 }
@@ -250,4 +250,99 @@ void Graph::saveNodeShortestPath(string pathFileName, int start)
     }
 
     ofile.close();
+}
+
+void Graph::betweennessCentrality(std::vector<int> &bCentrilities)
+{
+    vector<int> tempB(this->mNodes.size(), 0);
+
+    //对每一个节点
+    for (size_t i = 0; i < mNodes.size(); ++i)
+    {
+        int start = i;
+        vector<int> lastNodeVec, minWeightVec;
+        this->nodeShortestPath(start, lastNodeVec, minWeightVec);
+
+        //遍历它发出的所有路
+        for (size_t j = 0; j < this->mNodes.size(); ++j)
+        {
+            int end = j;
+            vector<int> path;
+            
+            //起点终点一样
+            if (start == end)
+                continue;
+            //没有路
+            if (lastNodeVec[end] == -1)
+                continue;
+
+            int current = end;
+            while (current != -1)
+            {
+                path.push_back(current);
+                current = lastNodeVec[current];
+            }
+            std::reverse(path.begin(), path.end());
+
+            //所有路中非结点对
+            for (size_t k = 1; k < path.size() - 1; ++k)
+            {
+                ++tempB[path[k]];
+            }
+        }
+    }
+
+    bCentrilities = tempB;
+}
+
+void Graph::closenessCentrality(std::vector<int> &cCentrilities)
+{
+    vector<int> tempC(mNodes.size(), 0);
+
+    for (size_t i = 0; i < mNodes.size(); ++i)
+    {
+        int start = i;
+        vector<int> lastNodeVec, minWeightVec;
+        this->nodeShortestPath(start, lastNodeVec, minWeightVec);
+
+        for (size_t j = 0; j < minWeightVec.size(); ++j)
+        {
+            if (minWeightVec[j] != -1)
+            {
+                tempC[start] += minWeightVec[j];
+            }
+        }
+    }
+
+    cCentrilities = tempC;
+}
+
+void Graph::saveBetweennessCentrality(std::string outfileName)
+{
+    ofstream outfile;
+    outfile.open(outfileName, ios::out);
+
+    vector<int> bCentrality;
+    this->betweennessCentrality(bCentrality);
+    for (size_t i = 0; i < bCentrality.size(); ++i)
+    {
+        cout << "Saving Centrality" << i << endl;
+        outfile << bCentrality[i] << endl;
+    }
+    outfile.close();
+}
+
+void Graph::saveClosenessCentrality(std::string outfileName)
+{
+    ofstream outfile;
+    outfile.open(outfileName, ios::out);
+
+    vector<int> cCentrality;
+    this->closenessCentrality(cCentrality);
+    for (size_t i = 0; i < cCentrality.size(); ++i)
+    {
+        cout << "Saving Centrality" << i << endl;
+        outfile << cCentrality[i] << endl;
+    }
+    outfile.close();
 }
