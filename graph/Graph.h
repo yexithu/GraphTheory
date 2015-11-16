@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include "Tree.h"
 
 class Node;
 
@@ -17,7 +18,7 @@ public:
     void readNodes(std::string nodeFileName);
     void readEdges(std::string edgeFileName);
     
-    int size();
+    size_t size();
     void debug();
 
 
@@ -30,7 +31,10 @@ public:
     void closenessCentrality(std::vector<int> &cCentrilities);
     void saveBetweennessCentrality(std::string outfileName);
     void saveClosenessCentrality(std::string outfileName);
-
+    
+    //最小生成树部分
+    void MinSpanningTree(Tree &tree);
+    void MinSpanningTree(Graph & g);
 private:
     std::vector<Node *> mNodes;
     std::map<int, int> mRankIndexMap;

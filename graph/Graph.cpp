@@ -55,7 +55,7 @@ void Graph::readEdges(std::string edgeFileName)
     infile.close();
 }
 
-int Graph::size()
+size_t Graph::size()
 {
     return this->mNodes.size();
 }
@@ -73,6 +73,9 @@ void Graph::debug()
 }
 
 
+
+//最短路径部分
+//-------------------------------------------------------------------------
 void Graph::shortestPath(int start, int end, vector<int> &path, int &weight)
 {
     vector<int> lastNodeVec, minWeightVec;
@@ -252,6 +255,9 @@ void Graph::saveNodeShortestPath(string pathFileName, int start)
     ofile.close();
 }
 
+
+//中心度部分
+//---------------------------------------------------------------
 void Graph::betweennessCentrality(std::vector<int> &bCentrilities)
 {
     vector<int> tempB(this->mNodes.size(), 0);
@@ -345,4 +351,81 @@ void Graph::saveClosenessCentrality(std::string outfileName)
         outfile << cCentrality[i] << endl;
     }
     outfile.close();
+}
+
+
+//最小生成树部分
+void Graph::MinSpanningTree(Tree &tree)
+{
+    //选取结点中心度最小的结点作为根节点
+    size_t root;
+    vector<int> cCrentralities;
+    this->closenessCentrality(cCrentralities);
+
+    int minCCentra = INT_MAX;
+    for (size_t i = 0; i < size(); ++i)
+    {
+        if (cCrentralities[i] < minCCentra)
+        {
+            minCCentra = cCrentralities[i];
+            root = i;
+        }
+    }
+
+
+    //构建所有树结点
+    vector<TreeNode *> treeNodes;
+    for (size_t i = 0; i < size(); ++i)
+    {
+        TreeNode *t = new TreeNode;
+        t->mIndex = i;
+        treeNodes.push_back(t);
+    }
+        
+    vector<bool> flag(size(), true);
+
+    flag[root] = false;
+    while (true)
+    {
+        //选取最小边
+        int start;
+        int end;
+        int minWeight = INT_MAX;
+
+        for (size_t i = 0; i < size(); ++i)
+        {
+            for (size_t j = 0; j < size(); ++j)
+            {
+                //Flag[i] 为false 已在最小树内
+                //Flag[j] 为true 不在最小树内
+                if (!flag[i] && flag[j])
+                {
+                    int temp = mNodes[i]->lengthTo(mNodes[j]);
+                    if (temp < minWeight)
+                    {
+                        start = i;
+                        end = j;
+                        minWeight = temp;
+                    }
+                }
+            }
+        }
+
+        if (minWeight == INT_MAX)
+            break;
+
+        //更新树
+        flag[end] = false;
+        treeNodes[start]->mChildren.push_back(treeNodes[end]);
+        treeNodes[start]->mWeight.push_back(minWeight);
+    }
+    
+    tree = treeNodes[root];
+}
+
+void Graph::MinSpanningTree(Graph & g)
+{
+    for (size_t i = 0; i < mNodes.size(); ++i)
+    {
+    }
 }

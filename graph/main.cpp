@@ -1,17 +1,20 @@
 #include <iostream>
 #include <vector>
 #include "Graph.h"
-
+#include "Tree.h"
 using namespace std;
 
 void buildGraph(Graph &graph);
 void testShortestPath(Graph &graph);
 void testCentralities(Graph &graph);
+void testMST(Graph &graph);
 int main()
 {
     Graph graph;
     buildGraph(graph);
-    testCentralities(graph);
+    //testShortestPath(graph);
+    //testCentralities(graph);
+    testMST(graph);
 }
 
 void buildGraph(Graph &graph)
@@ -62,4 +65,12 @@ void testCentralities(Graph &graph)
         cout << cCentralities[i] << endl;
     }
     graph.saveClosenessCentrality(cCentralityFile);
+}
+
+void testMST(Graph &graph)
+{
+    Tree tree = NULL;
+    graph.MinSpanningTree(tree);
+    cout << int(tree) << endl;
+    TreeNode::printTree(tree);
 }
