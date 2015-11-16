@@ -20,11 +20,15 @@ public:
     int size();
     void debug();
 
-    void saveShortestPath(int start);
     void shortestPath(int start, int end, std::vector<int> &path, int &weight);
+
+    void saveAllShortestPath(std::string pathFileName);
 private:
     std::vector<Node *> mNodes;
     std::map<int, int> mRankIndexMap;
+
+    void nodeShortestPath(int start, std::vector<int> &lastNodeVec, std::vector<int> &minWeightVec);
+    void saveNodeShortestPath(std::string pathFileName, int start);
 };
 
 #endif

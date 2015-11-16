@@ -19,3 +19,4 @@ int Node::lengthTo(Node *n)
 
     return l;
 }
+
