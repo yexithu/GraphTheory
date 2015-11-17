@@ -38,6 +38,10 @@ public:
     void MinSpanningTree(Graph & g);
     void saveMinSpanningTree(std::string outfileName);
 
+    //连通分量部分
+    void connectedComponet(int threadHold, std::vector<int> &cComponentID);
+    void assignComponetID(int nodeIndex, int threadHold, std::vector<int> &cComponentID);
+
 private:
     std::vector<Node *> mNodes;
     std::map<int, int> mRankIndexMap;

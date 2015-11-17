@@ -8,13 +8,15 @@ void buildGraph(Graph &graph);
 void testShortestPath(Graph &graph);
 void testCentralities(Graph &graph);
 void testMST(Graph &graph);
+void testConnectedComponent(Graph &graph);
 int main()
 {
     Graph graph;
     buildGraph(graph);
     //testShortestPath(graph);
     //testCentralities(graph);
-    testMST(graph);
+    //testMST(graph);
+    testConnectedComponent(graph);
 }
 
 void buildGraph(Graph &graph)
@@ -78,4 +80,16 @@ void testMST(Graph &graph)
     graph.MinSpanningTree(MST);
     MST.debug();*/
     graph.saveMinSpanningTree(MSTfile);
+}
+
+void testConnectedComponent(Graph &graph)
+{
+    vector<int> cComponetID;
+    graph.connectedComponet(300, cComponetID);
+    for (size_t i = 0; i < cComponetID.size(); ++i)
+    {
+        cout << cComponetID[i] << " ";
+    }
+    cout << endl;
+
 }

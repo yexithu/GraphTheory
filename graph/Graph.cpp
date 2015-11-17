@@ -493,3 +493,45 @@ void Graph::saveMinSpanningTree(std::string outfileName)
     }
     ofile.close();
 }
+
+
+//联通分量部分
+//---------------------------------------------------------------------
+void Graph::connectedComponet(int threadHold, vector<int> &cComponentID)
+{
+    vector<int> tempCCop(size(), -1);
+    
+    int nextID = 0;
+
+    for (size_t i = 0; i < size(); ++i)
+    {
+        if (tempCCop[i] == -1)
+        {
+            tempCCop[i] = nextID;
+            ++nextID;
+            assignComponetID(i, threadHold, tempCCop);
+        }
+ 
+   }
+   cComponentID = tempCCop;
+}
+
+void Graph::assignComponetID(int nodeIndex, int threadHold, vector<int> &cComponentID)
+{
+    Node * n = this->mNodes[nodeIndex];
+    for (size_t i = 0; i < n->mSuccessors.size(); ++i)
+    {
+        //仅当边权大于阈值
+        if (n->mWeights[i] >= threadHold)
+        {
+            size_t endIndex = this->mRankIndexMap[n->mSuccessors[i]->mRank];
+
+            //另一头没有
+            if (cComponentID[endIndex] == -1)
+            {
+                cComponentID[endIndex] = cComponentID[nodeIndex];
+                assignComponetID(endIndex, threadHold, cComponentID);
+            }
+        }
+    }
+}
