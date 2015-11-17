@@ -355,10 +355,11 @@ void Graph::saveClosenessCentrality(std::string outfileName)
 
 
 //最小生成树部分
-void Graph::MinSpanningTree(Tree &tree)
+//---------------------------------------------------
+
+void Graph::MinSpanningTree(vector<TreeNode *> &treeNodes, size_t &root)
 {
     //选取结点中心度最小的结点作为根节点
-    size_t root;
     vector<int> cCrentralities;
     this->closenessCentrality(cCrentralities);
 
@@ -374,14 +375,13 @@ void Graph::MinSpanningTree(Tree &tree)
 
 
     //构建所有树结点
-    vector<TreeNode *> treeNodes;
     for (size_t i = 0; i < size(); ++i)
     {
         TreeNode *t = new TreeNode;
         t->mIndex = i;
         treeNodes.push_back(t);
     }
-        
+
     vector<bool> flag(size(), true);
 
     flag[root] = false;
@@ -401,7 +401,7 @@ void Graph::MinSpanningTree(Tree &tree)
                 if (!flag[i] && flag[j])
                 {
                     int temp = mNodes[i]->lengthTo(mNodes[j]);
-                    if (temp < minWeight)
+                    if (temp != -1 && temp < minWeight)
                     {
                         start = i;
                         end = j;
@@ -419,13 +419,77 @@ void Graph::MinSpanningTree(Tree &tree)
         treeNodes[start]->mChildren.push_back(treeNodes[end]);
         treeNodes[start]->mWeight.push_back(minWeight);
     }
-    
-    tree = treeNodes[root];
+}
+
+void Graph::MinSpanningTree(Tree &tree)
+{
+    vector<TreeNode *> treeeNodes;
+    size_t root = -1;
+    this->MinSpanningTree(treeeNodes, root);
+    tree = treeeNodes[root];
 }
 
 void Graph::MinSpanningTree(Graph & g)
 {
-    for (size_t i = 0; i < mNodes.size(); ++i)
+    Tree tree;
+    this->MinSpanningTree(tree);
+    this->getSpanningGraphFromTree(g, tree);
+}
+
+
+void Graph::getSpanningGraphFromTree(Graph &graph, Tree tree)
+{
+    if (graph.size() == 0)
     {
+        Node *n = new Node;
+        n->mRank = mNodes[tree->mIndex]->mRank;
+        n->mMovieID = mNodes[tree->mIndex]->mMovieID;
+        graph.mNodes.push_back(n);
+        graph.mRankIndexMap.insert(pair<int, int>(n->mRank, graph.mNodes.size() - 1));
     }
+
+    int pRank = mNodes[tree->mIndex]->mRank;
+    Node *parent = graph.mNodes[graph.mRankIndexMap[pRank]];
+
+    for (size_t i = 0; i < tree->mChildren.size(); ++i)
+    {
+        Node *n = new Node;
+        //tree->mChildren[i]->mIndex 该点在mNodes中Index
+        n->mRank = mNodes[tree->mChildren[i]->mIndex]->mRank;
+        n->mMovieID = mNodes[tree->mChildren[i]->mIndex]->mMovieID;
+
+        graph.mNodes.push_back(n);
+        graph.mRankIndexMap.insert(pair<int, int>(n->mRank, graph.mNodes.size() - 1));
+
+        parent->mSuccessors.push_back(n);
+        n->mSuccessors.push_back(parent);
+    }
+
+    for (size_t i = 0; i < tree->mChildren.size(); ++i)
+    {
+        getSpanningGraphFromTree(graph, tree->mChildren[i]);
+    }
+}
+
+void Graph::saveMinSpanningTree(std::string outfileName)
+{
+    vector<TreeNode *> treeNodes;
+    size_t root;
+
+    ofstream ofile;
+    ofile.open(outfileName, ios::out);
+
+    this->MinSpanningTree(treeNodes, root);
+
+    ofile << root << endl;
+    for (size_t i = 0; i < treeNodes.size(); ++i)
+    {
+        ofile << treeNodes[i]->mIndex;
+        for (size_t j = 0; j < treeNodes[i]->mChildren.size(); ++j)
+        {
+            ofile << " " << treeNodes[i]->mChildren[j]->mIndex;
+        }
+        ofile << endl;
+    }
+    ofile.close();
 }

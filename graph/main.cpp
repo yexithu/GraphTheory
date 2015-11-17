@@ -69,8 +69,13 @@ void testCentralities(Graph &graph)
 
 void testMST(Graph &graph)
 {
-    Tree tree = NULL;
-    graph.MinSpanningTree(tree);
-    cout << int(tree) << endl;
-    TreeNode::printTree(tree);
+    const string MSTfile = "./Data/MST.txt";
+    //Tree tree = NULL;
+    //graph.MinSpanningTree(tree);
+    //cout << (int)tree << endl;
+    //TreeNode::printTree(tree);
+    /*Graph MST;
+    graph.MinSpanningTree(MST);
+    MST.debug();*/
+    graph.saveMinSpanningTree(MSTfile);
 }

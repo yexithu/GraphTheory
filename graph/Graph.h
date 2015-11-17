@@ -33,8 +33,11 @@ public:
     void saveClosenessCentrality(std::string outfileName);
     
     //最小生成树部分
+    void MinSpanningTree(std::vector<TreeNode *> &treenodes, size_t &root);
     void MinSpanningTree(Tree &tree);
     void MinSpanningTree(Graph & g);
+    void saveMinSpanningTree(std::string outfileName);
+
 private:
     std::vector<Node *> mNodes;
     std::map<int, int> mRankIndexMap;
@@ -42,6 +45,9 @@ private:
     //最短路部分
     void nodeShortestPath(int start, std::vector<int> &lastNodeVec, std::vector<int> &minWeightVec);
     void saveNodeShortestPath(std::string pathFileName, int start);
+
+    //最小生成树部分
+    void getSpanningGraphFromTree(Graph &graph, Tree tree);
 };
 
 #endif
