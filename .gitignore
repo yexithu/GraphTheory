@@ -1,7 +1,0 @@
-spider/.idea
-spider/*/__pycache__
-graph/graph.opensdf
-graph/graph.sdf
-graph/graph.sln
-graph/Debug
-graph/Release
