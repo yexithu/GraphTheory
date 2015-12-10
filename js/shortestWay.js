@@ -80,7 +80,7 @@ function calculate() {
     if (weight == -1) {
       document.getElementById("outputPath").value = "两点间不存在路径";
     } else {
-      document.getElementById("outputPath").value = "路径：[" + outputPath + "] 长度：" + weight;
+      document.getElementById("outputPath").value = "最短路：" + outputPath + "   权：" + weight;
     }
   });
 }

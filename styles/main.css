@@ -20,3 +20,13 @@ body {
 .short-way-input {
 	width: 600px;
 }
+
+.node-shortway {
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.link-shortway {
+  stroke: #999;
+  stroke-opacity: .6;
+}
