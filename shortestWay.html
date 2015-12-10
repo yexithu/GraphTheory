@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node-shortway {
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.link-shortway {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+</style>
+<head>
+  <meta charset="utf-8">
+  <title>图论可视化</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="styles/main.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<div class="container">
+<form class="form-horizontal control">
+  <div class="control-group">
+    <span class="short-way-input-label">起点</span>
+    <span>
+      <input class="short-way-input"  id="startVertex" type="text">
+    </span>
+  </div>
+  <div class="control-group">
+    <span class="short-way-input-label" >终点</span>
+    <span>
+      <input class="short-way-input" id="endVertex" type="text">
+    </span>
+  </div>
+  <div class="control-group">
+    <span class="short-way-input-label">结果</span>
+    <span>
+      <input class="short-way-input" id="outputPath" type="text">
+    </span>
+  </div>
+  <div>
+    <button class="btn" onclick="calculate()">计算</button>
+  </div>
+</form>
+</div>
+<script src="components/jquery-1.11.3.min.js" charset="utf-8"></script>
+<script src="components/d3.min.js" charset="utf-8"></script>
+<script src="js/shortestWay.js" charset="utf-8"></script>
+</body>
