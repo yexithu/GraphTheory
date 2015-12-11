@@ -12,8 +12,8 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var colorGradient = ["#f3e5f5", "#e1bee7", "#ce93d8", "#ba68c8", "#ab47bc", "#9c27b0", "#8e24aa", "#7b1fa2", "#6a1ba2", "#4a148c"];
-var centralityGradient = [0, 2, 6, 13, 23, 44, 85, 285, 777, 1448];
+var colorGradient = ["#d3fdfb", "#c0e2f8", "#aec8f6", "#9caef4", "#8a94f2", "#7879f0", "#665fee", "#5445ec", "#422bea", "#3011e8"];
+var centralityGradient = [1084, 1389, 1513, 1579, 1666, 1763, 1859, 1984, 2088, 2239];
 
 function assignColor(cenVal) {
   var count = 0;
@@ -44,11 +44,11 @@ d3.json("json/graph_nodes_centrality.json", function(error, graph) {
     .enter().append("circle")
       .attr("class", "node-centrality")
       .attr("r", 10)
-      .style("fill", function(d) { return assignColor(d.BCentrality); })
+      .style("fill", function(d) { return assignColor(d.CCentrality); })
       .call(force.drag);
 
   node.append("title")
-      .text(function(d) { return d.title + "\n中心度: " + d.BCentrality; });
+      .text(function(d) { return d.title + "\n中心度: " + d.CCentrality; });
 
   force.on("tick", function() {
     link.attr("x1", function(d) { return d.source.x; })
