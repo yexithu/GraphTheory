@@ -30,3 +30,14 @@ body {
   stroke: #999;
   stroke-opacity: .6;
 }
+
+
+.node-centrality {
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.link-centrality {
+  stroke: #999;
+  stroke-opacity: .6;
+}

@@ -1,0 +1,1240 @@
+﻿{
+ "edges": [],
+ "nodes": [
+  {
+   "BCentrality": 388,
+   "CCentrality": 1579,
+   "title": "时空恋旅人"
+  },
+  {
+   "BCentrality": 6402,
+   "CCentrality": 1280,
+   "title": "7号房的礼物"
+  },
+  {
+   "BCentrality": 28,
+   "CCentrality": 1829,
+   "title": "布达佩斯大饭店"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1672,
+   "title": "大鱼"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2376,
+   "title": "霸王别姬"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1780,
+   "title": "死亡诗社"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2538,
+   "title": "放牛班的春天"
+  },
+  {
+   "BCentrality": 2,
+   "CCentrality": 1945,
+   "title": "指环王3：王者无敌"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1744,
+   "title": "花样年华"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2308,
+   "title": "龙猫"
+  },
+  {
+   "BCentrality": 2,
+   "CCentrality": 2158,
+   "title": "千与千寻"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2086,
+   "title": "疯狂约会美丽都"
+  },
+  {
+   "BCentrality": 23,
+   "CCentrality": 1814,
+   "title": "东京物语"
+  },
+  {
+   "BCentrality": 23,
+   "CCentrality": 2049,
+   "title": "指环王1：魔戒再现"
+  },
+  {
+   "BCentrality": 63,
+   "CCentrality": 1881,
+   "title": "指环王2：双塔奇兵"
+  },
+  {
+   "BCentrality": 3,
+   "CCentrality": 2087,
+   "title": "冰川时代"
+  },
+  {
+   "BCentrality": 30,
+   "CCentrality": 1528,
+   "title": "怪兽电力公司"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1943,
+   "title": "天空之城"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1842,
+   "title": "风之谷"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2492,
+   "title": "饮食男女"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1646,
+   "title": "卢旺达饭店"
+  },
+  {
+   "BCentrality": 289,
+   "CCentrality": 1362,
+   "title": "黑鹰坠落"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2052,
+   "title": "天堂电影院"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1573,
+   "title": "低俗小说"
+  },
+  {
+   "BCentrality": 4,
+   "CCentrality": 1986,
+   "title": "教父"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1313,
+   "title": "黑客帝国"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1767,
+   "title": "终结者2"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2231,
+   "title": "英国病人"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2046,
+   "title": "鬼子来了"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2001,
+   "title": "雨人"
+  },
+  {
+   "BCentrality": 18,
+   "CCentrality": 1411,
+   "title": "阳光灿烂的日子"
+  },
+  {
+   "BCentrality": 39,
+   "CCentrality": 1728,
+   "title": "罗生门"
+  },
+  {
+   "BCentrality": 6,
+   "CCentrality": 1732,
+   "title": "爱在日落黄昏时"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2208,
+   "title": "末路狂花"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2017,
+   "title": "重庆森林"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2025,
+   "title": "搏击俱乐部"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1712,
+   "title": "海上钢琴师"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2159,
+   "title": "肖申克的救赎"
+  },
+  {
+   "BCentrality": 12,
+   "CCentrality": 1837,
+   "title": "再见列宁"
+  },
+  {
+   "BCentrality": 59,
+   "CCentrality": 1900,
+   "title": "蝴蝶"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1559,
+   "title": "美国丽人"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1776,
+   "title": "美丽人生"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2302,
+   "title": "楚门的世界"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1272,
+   "title": "上帝之城"
+  },
+  {
+   "BCentrality": 166,
+   "CCentrality": 1598,
+   "title": "大话西游之大圣娶亲"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1596,
+   "title": "非常嫌疑犯"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1558,
+   "title": "天使爱美丽"
+  },
+  {
+   "BCentrality": 2,
+   "CCentrality": 1583,
+   "title": "穆赫兰道"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2221,
+   "title": "中央车站"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2199,
+   "title": "情书"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1565,
+   "title": "七宗罪"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1666,
+   "title": "飞越疯人院"
+  },
+  {
+   "BCentrality": 55,
+   "CCentrality": 1321,
+   "title": "发条橙"
+  },
+  {
+   "BCentrality": 2809,
+   "CCentrality": 1176,
+   "title": "美国往事"
+  },
+  {
+   "BCentrality": 24,
+   "CCentrality": 1362,
+   "title": "梦之安魂曲"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 1939,
+   "title": "幸福终点站"
+  },
+  {
+   "BCentrality": 927,
+   "CCentrality": 1375,
+   "title": "迁徙的鸟"
+  },
+  {
+   "BCentrality": 20,
+   "CCentrality": 1880,
+   "title": "新龙门客栈"
+  },
+  {
+   "BCentrality": 15,
+   "CCentrality": 1835,
+   "title": "东邪西毒"
+  },
+  {
+   "BCentrality": 104,
+   "CCentrality": 1646,
+   "title": "牯岭街少年杀人事件"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1859,
+   "title": "蝴蝶效应"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1815,
+   "title": "洛城机密"
+  },
+  {
+   "BCentrality": 8,
+   "CCentrality": 1518,
+   "title": "活着"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 2057,
+   "title": "剪刀手爱德华"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1725,
+   "title": "真爱至上"
+  },
+  {
+   "BCentrality": 73,
+   "CCentrality": 1567,
+   "title": "西西里的美丽传说"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2043,
+   "title": "一一"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1493,
+   "title": "猜火车"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2336,
+   "title": "心灵捕手"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 1898,
+   "title": "变脸"
+  },
+  {
+   "BCentrality": 57,
+   "CCentrality": 1918,
+   "title": "春光乍泄"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1370,
+   "title": "阿甘正传"
+  },
+  {
+   "BCentrality": 30,
+   "CCentrality": 1876,
+   "title": "泰坦尼克号"
+  },
+  {
+   "BCentrality": 420,
+   "CCentrality": 1452,
+   "title": "勇闯夺命岛"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1596,
+   "title": "拯救大兵瑞恩"
+  },
+  {
+   "BCentrality": 34,
+   "CCentrality": 1586,
+   "title": "伴我同行"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 2336,
+   "title": "末代皇帝"
+  },
+  {
+   "BCentrality": 44,
+   "CCentrality": 1668,
+   "title": "惊魂记"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1589,
+   "title": "十二怒汉"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1548,
+   "title": "萤火虫之墓"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1819,
+   "title": "两杆大烟枪"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2157,
+   "title": "菊次郎的夏天"
+  },
+  {
+   "BCentrality": 5,
+   "CCentrality": 1603,
+   "title": "莫扎特传"
+  },
+  {
+   "BCentrality": 107,
+   "CCentrality": 1542,
+   "title": "雨中曲"
+  },
+  {
+   "BCentrality": 5,
+   "CCentrality": 1492,
+   "title": "角斗士"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1984,
+   "title": "沉默的羔羊"
+  },
+  {
+   "BCentrality": 1497,
+   "CCentrality": 1419,
+   "title": "与狼共舞"
+  },
+  {
+   "BCentrality": 68,
+   "CCentrality": 1604,
+   "title": "罗马假日"
+  },
+  {
+   "BCentrality": 21,
+   "CCentrality": 1660,
+   "title": "城市之光"
+  },
+  {
+   "BCentrality": 453,
+   "CCentrality": 1678,
+   "title": "廊桥遗梦"
+  },
+  {
+   "BCentrality": 2123,
+   "CCentrality": 1355,
+   "title": "魂断蓝桥"
+  },
+  {
+   "BCentrality": 1096,
+   "CCentrality": 1469,
+   "title": "教父3"
+  },
+  {
+   "BCentrality": 716,
+   "CCentrality": 1579,
+   "title": "摩登时代"
+  },
+  {
+   "BCentrality": 908,
+   "CCentrality": 1406,
+   "title": "音乐之声"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2042,
+   "title": "E.T."
+  },
+  {
+   "BCentrality": 121,
+   "CCentrality": 1555,
+   "title": "勇敢的心"
+  },
+  {
+   "BCentrality": 4,
+   "CCentrality": 2167,
+   "title": "哈利·波特与魔法石"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2026,
+   "title": "辛德勒的名单"
+  },
+  {
+   "BCentrality": 79,
+   "CCentrality": 1389,
+   "title": "七武士"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 2012,
+   "title": "纵横四海"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2563,
+   "title": "这个杀手不太冷"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1777,
+   "title": "燃情岁月"
+  },
+  {
+   "BCentrality": 120,
+   "CCentrality": 1737,
+   "title": "控方证人"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1833,
+   "title": "爱在黎明破晓前"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1799,
+   "title": "钢琴家"
+  },
+  {
+   "BCentrality": 2,
+   "CCentrality": 1550,
+   "title": "卡萨布兰卡"
+  },
+  {
+   "BCentrality": 837,
+   "CCentrality": 1676,
+   "title": "虎口脱险"
+  },
+  {
+   "BCentrality": 951,
+   "CCentrality": 1484,
+   "title": "侧耳倾听"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 1650,
+   "title": "致命ID"
+  },
+  {
+   "BCentrality": 212,
+   "CCentrality": 1312,
+   "title": "幽灵公主"
+  },
+  {
+   "BCentrality": 11,
+   "CCentrality": 1885,
+   "title": "倩女幽魂"
+  },
+  {
+   "BCentrality": 11,
+   "CCentrality": 1919,
+   "title": "上帝也疯狂"
+  },
+  {
+   "BCentrality": 443,
+   "CCentrality": 1458,
+   "title": "英雄本色"
+  },
+  {
+   "BCentrality": 2,
+   "CCentrality": 1666,
+   "title": "第六感"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1763,
+   "title": "加勒比海盗"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1833,
+   "title": "闻香识女人"
+  },
+  {
+   "BCentrality": 20,
+   "CCentrality": 1278,
+   "title": "荒岛余生"
+  },
+  {
+   "BCentrality": 1465,
+   "CCentrality": 1419,
+   "title": "教父2"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1623,
+   "title": "夜访吸血鬼"
+  },
+  {
+   "BCentrality": 476,
+   "CCentrality": 1474,
+   "title": "爱·回家"
+  },
+  {
+   "BCentrality": 152,
+   "CCentrality": 1384,
+   "title": "大话西游之月光宝盒"
+  },
+  {
+   "BCentrality": 45,
+   "CCentrality": 1553,
+   "title": "千钧一发"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1903,
+   "title": "乱世佳人"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1984,
+   "title": "杀人回忆"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 2084,
+   "title": "绿里奇迹"
+  },
+  {
+   "BCentrality": 308,
+   "CCentrality": 1383,
+   "title": "枪火"
+  },
+  {
+   "BCentrality": 3,
+   "CCentrality": 1610,
+   "title": "碧海蓝天"
+  },
+  {
+   "BCentrality": 67,
+   "CCentrality": 1531,
+   "title": "完美的世界"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1695,
+   "title": "跳出我天地"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1791,
+   "title": "偷拐抢骗"
+  },
+  {
+   "BCentrality": 16,
+   "CCentrality": 1491,
+   "title": "不一样的天空"
+  },
+  {
+   "BCentrality": 244,
+   "CCentrality": 1515,
+   "title": "狮子王"
+  },
+  {
+   "BCentrality": 1266,
+   "CCentrality": 1419,
+   "title": "喜剧之王"
+  },
+  {
+   "BCentrality": 643,
+   "CCentrality": 1400,
+   "title": "黑客帝国3：矩阵革命"
+  },
+  {
+   "BCentrality": 633,
+   "CCentrality": 1608,
+   "title": "麦兜故事"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1525,
+   "title": "人工智能"
+  },
+  {
+   "BCentrality": 16,
+   "CCentrality": 2251,
+   "title": "小鞋子"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2516,
+   "title": "喜宴"
+  },
+  {
+   "BCentrality": 242,
+   "CCentrality": 1724,
+   "title": "青蛇"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2239,
+   "title": "假如爱有天意"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1521,
+   "title": "谍影重重"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1994,
+   "title": "记忆碎片"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2138,
+   "title": "甜蜜蜜"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1718,
+   "title": "猫鼠游戏"
+  },
+  {
+   "BCentrality": 8,
+   "CCentrality": 1966,
+   "title": "阿飞正传"
+  },
+  {
+   "BCentrality": 39,
+   "CCentrality": 1729,
+   "title": "大卫·戈尔的一生"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2115,
+   "title": "美丽心灵"
+  },
+  {
+   "BCentrality": 11,
+   "CCentrality": 1883,
+   "title": "唐伯虎点秋香"
+  },
+  {
+   "BCentrality": 866,
+   "CCentrality": 1248,
+   "title": "我是山姆"
+  },
+  {
+   "BCentrality": 285,
+   "CCentrality": 1735,
+   "title": "哪吒闹海"
+  },
+  {
+   "BCentrality": 69,
+   "CCentrality": 1531,
+   "title": "燕尾蝶"
+  },
+  {
+   "BCentrality": 3,
+   "CCentrality": 2036,
+   "title": "魔女宅急便"
+  },
+  {
+   "BCentrality": 7,
+   "CCentrality": 1508,
+   "title": "无间道"
+  },
+  {
+   "BCentrality": 20,
+   "CCentrality": 1903,
+   "title": "蓝色大门"
+  },
+  {
+   "BCentrality": 65,
+   "CCentrality": 2232,
+   "title": "谍影重重2"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1763,
+   "title": "暖暖内含光"
+  },
+  {
+   "BCentrality": 39,
+   "CCentrality": 1799,
+   "title": "哈尔的移动城堡"
+  },
+  {
+   "BCentrality": 2,
+   "CCentrality": 1912,
+   "title": "两小无猜"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2097,
+   "title": "可可西里"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2318,
+   "title": "V字仇杀队"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2214,
+   "title": "恋恋笔记本"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2157,
+   "title": "射雕英雄传之东成西就"
+  },
+  {
+   "BCentrality": 12,
+   "CCentrality": 1633,
+   "title": "导盲犬小Q"
+  },
+  {
+   "BCentrality": 71,
+   "CCentrality": 1523,
+   "title": "帝企鹅日记"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1358,
+   "title": "撞车"
+  },
+  {
+   "BCentrality": 35,
+   "CCentrality": 1942,
+   "title": "未麻的部屋"
+  },
+  {
+   "BCentrality": 94,
+   "CCentrality": 1663,
+   "title": "追随"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1648,
+   "title": "黄金三镖客"
+  },
+  {
+   "BCentrality": 62,
+   "CCentrality": 1810,
+   "title": "大闹天宫"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1508,
+   "title": "傲慢与偏见"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2090,
+   "title": "断背山"
+  },
+  {
+   "BCentrality": 324,
+   "CCentrality": 1246,
+   "title": "战争之王"
+  },
+  {
+   "BCentrality": 13,
+   "CCentrality": 1662,
+   "title": "血钻"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1358,
+   "title": "无耻混蛋"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1859,
+   "title": "本杰明·巴顿奇事"
+  },
+  {
+   "BCentrality": 5,
+   "CCentrality": 1539,
+   "title": "谍影重重3"
+  },
+  {
+   "BCentrality": 2,
+   "CCentrality": 1636,
+   "title": "阿凡达"
+  },
+  {
+   "BCentrality": 1816,
+   "CCentrality": 1264,
+   "title": "我们俩"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 2207,
+   "title": "香水"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2247,
+   "title": "致命魔术"
+  },
+  {
+   "BCentrality": 6,
+   "CCentrality": 2095,
+   "title": "被嫌弃的松子的一生"
+  },
+  {
+   "BCentrality": 199,
+   "CCentrality": 1573,
+   "title": "八月迷情"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1909,
+   "title": "当幸福来敲门"
+  },
+  {
+   "BCentrality": 5,
+   "CCentrality": 1696,
+   "title": "蝙蝠侠：黑暗骑士"
+  },
+  {
+   "BCentrality": 31,
+   "CCentrality": 1662,
+   "title": "玩具总动员3"
+  },
+  {
+   "BCentrality": 2103,
+   "CCentrality": 1142,
+   "title": "疯狂的石头"
+  },
+  {
+   "BCentrality": 4,
+   "CCentrality": 1506,
+   "title": "红辣椒"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1513,
+   "title": "遗愿清单"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2087,
+   "title": "窃听风暴"
+  },
+  {
+   "BCentrality": 218,
+   "CCentrality": 1272,
+   "title": "荒野生存"
+  },
+  {
+   "BCentrality": 1,
+   "CCentrality": 1848,
+   "title": "疯狂原始人"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2389,
+   "title": "少年派的奇幻漂流"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2360,
+   "title": "穿越时空的少女"
+  },
+  {
+   "BCentrality": 544,
+   "CCentrality": 1575,
+   "title": "忠犬八公物语"
+  },
+  {
+   "BCentrality": 85,
+   "CCentrality": 1743,
+   "title": "我在伊朗长大"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2249,
+   "title": "黑天鹅"
+  },
+  {
+   "BCentrality": 38,
+   "CCentrality": 2061,
+   "title": "秒速5厘米"
+  },
+  {
+   "BCentrality": 1319,
+   "CCentrality": 1438,
+   "title": "曾经"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1956,
+   "title": "飞屋环游记"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2325,
+   "title": "机器人总动员"
+  },
+  {
+   "BCentrality": 1159,
+   "CCentrality": 1496,
+   "title": "恐怖直播"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1855,
+   "title": "入殓师"
+  },
+  {
+   "BCentrality": 271,
+   "CCentrality": 1599,
+   "title": "辩护人"
+  },
+  {
+   "BCentrality": 17992,
+   "CCentrality": 1084,
+   "title": "素媛"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2008,
+   "title": "贫民窟的百万富翁"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1566,
+   "title": "朗读者"
+  },
+  {
+   "BCentrality": 8,
+   "CCentrality": 1784,
+   "title": "浪潮"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1739,
+   "title": "这个男人来自地球"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2171,
+   "title": "禁闭岛"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1739,
+   "title": "驯龙高手"
+  },
+  {
+   "BCentrality": 7,
+   "CCentrality": 1742,
+   "title": "地球上的星星"
+  },
+  {
+   "BCentrality": 1686,
+   "CCentrality": 1359,
+   "title": "爱在暹罗"
+  },
+  {
+   "BCentrality": 6,
+   "CCentrality": 1827,
+   "title": "海盗电台"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2145,
+   "title": "穿条纹睡衣的男孩"
+  },
+  {
+   "BCentrality": 17,
+   "CCentrality": 1825,
+   "title": "恐怖游轮"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2008,
+   "title": "忠犬八公的故事"
+  },
+  {
+   "BCentrality": 824,
+   "CCentrality": 1545,
+   "title": "哈利·波特与死亡圣器(下)"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1730,
+   "title": "玛丽和马克思"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2035,
+   "title": "月球"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1916,
+   "title": "源代码"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2309,
+   "title": "巴黎淘气帮"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1777,
+   "title": "勇士"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2460,
+   "title": "神偷奶爸"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2178,
+   "title": "怦然心动"
+  },
+  {
+   "BCentrality": 35,
+   "CCentrality": 1700,
+   "title": "蝙蝠侠：黑暗骑士崛起"
+  },
+  {
+   "BCentrality": 30,
+   "CCentrality": 1700,
+   "title": "海豚湾"
+  },
+  {
+   "BCentrality": 4,
+   "CCentrality": 1862,
+   "title": "海洋"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2088,
+   "title": "盗梦空间"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2120,
+   "title": "让子弹飞"
+  },
+  {
+   "BCentrality": 13,
+   "CCentrality": 1955,
+   "title": "岁月神偷"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2242,
+   "title": "三傻大闹宝莱坞"
+  },
+  {
+   "BCentrality": 1071,
+   "CCentrality": 1467,
+   "title": "刺猬的优雅"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 1556,
+   "title": "国王的演讲"
+  },
+  {
+   "BCentrality": 18,
+   "CCentrality": 2160,
+   "title": "借东西的小人阿莉埃蒂"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2177,
+   "title": "告白"
+  },
+  {
+   "BCentrality": 777,
+   "CCentrality": 1188,
+   "title": "速度与激情5"
+  },
+  {
+   "BCentrality": 1222,
+   "CCentrality": 1483,
+   "title": "初恋这件小事"
+  },
+  {
+   "BCentrality": 6,
+   "CCentrality": 1994,
+   "title": "叫我第一名"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2211,
+   "title": "阳光姐妹淘"
+  },
+  {
+   "BCentrality": 17,
+   "CCentrality": 1884,
+   "title": "超脱"
+  },
+  {
+   "BCentrality": 1448,
+   "CCentrality": 1445,
+   "title": "我爱你"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2535,
+   "title": "一次别离"
+  },
+  {
+   "BCentrality": 14970,
+   "CCentrality": 1129,
+   "title": "萤火之森"
+  },
+  {
+   "BCentrality": 991,
+   "CCentrality": 1614,
+   "title": "寿司之神"
+  },
+  {
+   "BCentrality": 1493,
+   "CCentrality": 1416,
+   "title": "无敌破坏王"
+  },
+  {
+   "BCentrality": 0,
+   "CCentrality": 2593,
+   "title": "触不可及"
+  },
+  {
+   "BCentrality": 559,
+   "CCentrality": 1472,
+   "title": "狩猎"
+  }
+ ]
+}
