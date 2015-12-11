@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>图论可视化</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="styles/main.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+    input[type="range"] {
+        margin-top: 2px;
+        background-color: #f1f1f1;
+        border-radius: 15px;
+        width: 400px;
+        -webkit-appearance: none;
+        height:10px;
+        }
+       input[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          cursor: default;
+          height: 20px;
+          width: 20px;
+          transform: translateY(-4px);
+          background: none repeat scroll 0 0 #b8b8b8;
+          border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="components/jquery-1.11.3.min.js"></script>
+    <script src="components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="components/d3.min.js" charset="utf-8"></script>
+    <h2 style="font-family:verdana">联通分量</h2>
+    <div>
+      <form>
+        <input type="range" min="0" max="501" step="1" value="0" id="threhold-slider" onchange="onThreholdChange()"/>
+      </form>
+    </div>
+    <div>
+      <h4 id="thredhold-label">阈值: 0</h4>
+    </div>
+    
+    <script src="js/connectedComponent.js"></script>
+  </body>
+</html>
